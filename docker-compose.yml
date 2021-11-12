@@ -10,7 +10,7 @@ services:
     volumes:
       - dev_pg_data:/var/lib/postgresql/data
     environment:
-      POSTGRES_DB: axis
+      POSTGRES_DB: todo_manager
       POSTGRES_PASSWORD: secret
 
 volumes:

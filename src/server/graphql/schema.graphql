@@ -1,3 +1,15 @@
 type Query {
   check: Boolean!
+
+  # todoList
+  countTodoLists(where: TodoListWhereInput): Int!
+  todoList(where: TodoListWhereInput!): TodoList!
+  todoLists(where: TodoListWhereInput, skip: Int, limit: Int): [TodoList]!
+}
+
+type Mutation {
+  # todoList
+  createTodoList(data: TodoListCreateInput!): TodoList!
+  updateTodoList(id: Int!, data: TodoListUpdateInput!): TodoList!
+  deleteTodoList(id: Int!): Boolean!
 }
