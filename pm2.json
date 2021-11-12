@@ -1,0 +1,6 @@
+{
+  "name": "axis-server",
+  "script": "npm",
+  "args" : "start",
+  "time": true
+}

@@ -1,0 +1,80 @@
+type Books {
+  totalCount: Int!
+  list: [Book!]!
+}
+
+type Book {
+  id: Int!
+  title: String!
+  author: Author!
+  comments: [Comment!]!
+  createdAt: DateTime!
+  updatedAt: DateTime!
+}
+
+input BookCreateInput {
+  title: String!
+}
+
+input BookUpdateInput {
+  title: String
+}
+
+input BookWhereInput {
+  AND: [BookWhereInput]
+  OR: [BookWhereInput]
+
+  id: Int
+  id_not: Int
+  id_lt: Int
+  id_lte: Int
+  id_gt: Int
+  id_gte: Int
+  id_in: [Int]
+  id_not_in: [Int]
+
+  title: String
+  title_not: String
+  title_contains: String
+  title_not_contains: String
+  title_starts_with: String
+  title_not_starts_with: String
+  title_ends_with: String
+  title_not_ends_with: String
+  title_lt: String
+  title_lte: String
+  title_gt: String
+  title_gte: String
+  title_in: [String]
+  title_not_in: [String]
+
+  createdAt: DateTime
+  createdAt_not: DateTime
+  createdAt_in: [DateTime]
+  createdAt_not_in: [DateTime]
+  createdAt_lt: DateTime
+  createdAt_lte: DateTime
+  createdAt_gt: DateTime
+  createdAt_gte: DateTime
+
+  updatedAt: DateTime
+  updatedAt_not: DateTime
+  updatedAt_in: [DateTime]
+  updatedAt_not_in: [DateTime]
+  updatedAt_lt: DateTime
+  updatedAt_lte: DateTime
+  updatedAt_gt: DateTime
+  updatedAt_gte: DateTime
+
+}
+
+enum BookOrderByInput {
+  id_ASC
+  id_DESC
+  title_ASC
+  title_DESC
+  createdAt_ASC
+  createdAt_DESC
+  updatedAt_ASC
+  updatedAt_DESC
+}

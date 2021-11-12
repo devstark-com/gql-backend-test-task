@@ -1,0 +1,23 @@
+.DS_Store
+node_modules
+postgres-data
+coverage
+
+Makefile
+.env
+
+*.log
+tmp/
+storage/*.*
+!storage/.gitkeep
+scripts/*
+
+# Editor directories and files
+.idea
+.vscode
+*.bak
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?

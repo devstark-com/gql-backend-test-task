@@ -1,0 +1,14 @@
+scalar DateTime
+scalar JSON
+scalar Upload
+scalar EmailAddress
+scalar PhoneNumber
+scalar URL
+scalar Currency
+scalar UnsignedInt
+scalar PositiveInt
+scalar NonNegativeInt
+scalar NonEmptyString
+scalar UnsignedFloat
+scalar PositiveFloat
+scalar NonNegativeFloat
