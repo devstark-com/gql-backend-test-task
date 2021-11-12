@@ -1,14 +1,14 @@
 # ToDo Lists App (Test Task)
 
-1) Using data scheme implement missing entities TodoList and TodoListItems. 
+1) Using data scheme implement missing entities `TodoList` and `TodoListItems`. 
 2) For each entity should be implemented following:
  - DB table
  - Model
  - Controller
- - Resolvers and Schemas 
-3) For complete DB structure implementation src/database/migrations/<timestamp>_init.js should be changed
+ - GQL Resolvers and Schemas 
+3) For complete DB structure implementation `src/database/migrations/<timestamp>_init.js` should be changed
 4) Each entity should have complete CRUD (+ count method)
-5) When finished update docs/postman.json
+5) When finished update `docs/postman.json`
 
 Entities related as
 
@@ -16,7 +16,7 @@ Entities related as
 User 1:N TodoList 1:N TodoListItem
 ```  
 
-As a reference you may use TodoList entity.
+As a reference you may use `TodoList` entity.
 Entities consists of
  - Interface (graphql - schemas/resolvers)
  - Controller - logic part of app's component
